@@ -1,0 +1,23 @@
+spring:
+  main:
+    #当遇到同样名字的时候，是否允许覆盖注册
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: ${mq.host}
+    port: ${mq.port}
+    #virtualHost: tbl
+    username: ${mq.user}
+    password: ${mq.passwd}
+    #publisher-confirms: true    #消息发送到交换机确认机制,是否确认回调
+    #publisher-returns: true     #消息失败返回，比如路由不到队列时触发回调
+    #listener:
+    #  simple:
+    #    acknowledge-mode: manual #设置消费者的手动确认 ack
+
+server:
+  port: 8090
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    max-connections: 20000
+
