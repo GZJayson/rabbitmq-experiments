@@ -19,9 +19,7 @@
 
 
       设置用户角色
-
             ./rabbitmqctl set_user_tags admin administrator
-
 
          
 
