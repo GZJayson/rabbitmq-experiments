@@ -23,11 +23,11 @@
 
          
 
-1 安装erlang
+1 安装erlang(环境依赖)
 
 brew install erlang 
 
-2 安装插件
+2 安装插件(用来实现延时消息)
 
 第一步： 下载插件
 
@@ -41,7 +41,7 @@ brew install erlang 
 rabbitmq-plugins enable rabbitmq_delayed_message_exchange
 
 
-3 rabbitmq 页面新建Exchange时看到 type 多出一项 x-delayed-message 表示安装成功
+3 rabbitmq 页面登录进去后在新建Exchange时看到 type 多出一项 x-delayed-message 表示安装成功
 
 
 
